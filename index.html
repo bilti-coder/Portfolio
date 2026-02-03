@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biltikin Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+
+    <div id="orientation-warning">
+        <div class="warning-content">
+            <p>Please use Desktop or Horizontal View.<br>
+            <span>This interactive experience is optimized for wider displays.</span></p>
+        </div>
+    </div>
+
+    <div id="bg-image-container">
+        <img src="spline-bg.png" id="hero-image" alt="Desk Scene">
+        
+        <div class="project-zone" id="zone-gossip"></div>
+        <div class="project-zone" id="zone-aspoc"></div>
+        <div class="project-zone" id="zone-tales"></div>
+        <div class="project-zone" id="zone-ux"></div>
+        <div class="project-zone" id="zone-pokemon"></div>
+        <div class="project-zone" id="zone-six"></div> </div>
+
+    <div id="screen-container">
+        <div id="landing-page-ui">
+            <div class="main-viewport">
+                <section class="left-pane" id="left-container">
+                    <h1 id="hello-text">Hello</h1>
+                </section>
+                <section class="right-pane">
+                    <div class="phrase-container" id="phrase-box">
+                        <span class="phrase p1">I’m Biltikin and I help people</span>
+                        <span class="phrase p2">by designing interactions between people and technology</span>
+                        <span class="phrase p3">considering systems, contexts, and constraints</span>
+                        <span class="phrase p4">through research, prototyping, testing, iteration, and documentation</span>
+                        <span class="phrase p5">while trying to balance usability, accessibility, feasibility, and meaning.</span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="scroll-indicator" id="scroll-arrows">
+                <span></span><span></span>
+            </div>
+
+            <div class="dock-container" id="dock">
+                <p class="dock-label">This is my toolkit:</p>
+                <div class="dock-bar-image"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-tooltip">Title</div>
+
+    <div id="modal-overlay">
+        <div id="modal-container">
+            <div id="modal-close">&times;</div>
+            <div id="modal-scroll-area">
+                <img src="" id="modal-img" alt="Project Description">
+            </div>
+        </div>
+    </div>
+    <div id="audio-container">
+        <div id="audio-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                
+                <path class="speaker-wave" d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                
+                <line class="speaker-x" x1="23" y1="9" x2="17" y2="15"></line>
+                <line class="speaker-x" x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+        </div>
+        
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.1">
+        
+        <audio id="bg-music" loop>
+            <source src="background-music.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+</div> <script src="script.js"></script>
+</body>
+</html>
